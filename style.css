@@ -1,0 +1,37 @@
+/*
+Theme Name:GENSEN-CHILD
+Template: gensen_tcd050
+Version:1.9.1
+*/
+
+
+#copyright {
+	font-size: 1.2em;
+	width: 100%;
+	text-align: center;
+}
+h3.custom_ttl {
+	color: red;
+}
+
+@media only screen and (max-width: 1024px) {
+	#footer_contents {
+	  padding: 0 !important;
+	}
+	#copyright {
+		margin-top: 0 !important;
+		background: #ed0005 !important;
+	}
+	#footer_info {
+	  padding: 0 !important;
+	}
+}
+@media only screen and (max-width: 767px) {
+	#footer_info {
+	  padding: 0 !important;
+	}
+}
+.clearfix:after, .clearfix:before {
+	content: "";
+	display: table;
+}
