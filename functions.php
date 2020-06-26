@@ -55,25 +55,25 @@ function register_custom_shortcode($atts) {
           </li>
           <li>
             <p>買取スピード</p>
-            <p><?php echo get_field('_purchase-speed') ?></p>
+            <p><?php echo get_field('_purchase-speed'); ?></p>
           </li>
           <li>
             <p>宅配買取</p>
-            <p><?php echo get_field('_home-delivery') ?></p>
+            <p><?php echo get_field('_home-delivery'); ?></p>
           </li>
           <li>
             <p>現金受取</p>
-            <p><?php echo get_field('_cash-receipt') ?></p>
+            <p><?php echo get_field('_cash-receipt'); ?></p>
           </li>
           <li>
             <p>出張買取</p>
-            <p><?php echo get_field('_business-purchase') ?></p>
+            <p><?php echo get_field('_business-purchase'); ?></p>
           </li>
         </ul>
       </div>
       <div class="flex">
         <div class="image">
-          <a href="<?php the_permalink(); ?>"><?php if($src!=''){ ?>
+          <a href="<?php echo get_field('url'); ?>" target="_blank"><?php if($src!=''){ ?>
             <img src="<?php echo $src[0];?>" alt="" />
             <?php } ?></a>
         </div>
@@ -83,7 +83,7 @@ function register_custom_shortcode($atts) {
             <?php the_content(); ?>
           </div>
           <div class="link-wrap">
-            <a class="links" href="#">⇒<?php echo get_the_title(); ?>はこちら</a>
+            <a class="links" href="<?php echo get_field('url'); ?>" target="_blank">⇒<?php echo get_the_title(); ?>はこちら</a>
           </div>
         </div>
       </div>
