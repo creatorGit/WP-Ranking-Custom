@@ -245,7 +245,7 @@ if ($dp_options['footer_nav_type2'] != 'none' && $dp_options['use_'.$dp_options[
        }
 ?>
 
-     <p id="copyright"><span><?php _e('Copyright ', 'tcd-w'); ?></span>&copy; 2020 <a href="<?php echo esc_url(home_url('/')); ?>"><?php bloginfo('name'); ?>.com</a> All Rights Reserved.</p>
+     <p id="copyright"><span><?php _e('Copyright ', 'tcd-w'); ?></span>&copy; 2020 <a href="<?php echo esc_url(home_url('/')); ?>"><?php bloginfo('name'); ?></a> All Rights Reserved.</p>
 
     </div><!-- END #footer_info -->
    </div><!-- END .inner -->
